@@ -1,0 +1,480 @@
+<!--             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title></title>
+	<style type="text/css">
+		/* Based on The MailChimp Reset INLINE: Yes. */  
+		
+		/* Force Outlook to provide a "view in browser" menu link. */
+		#outlook a {
+			padding:0;
+		}
+
+		body{
+			width:100% !important; 
+			-webkit-text-size-adjust:100%; 
+			-ms-text-size-adjust:100%;
+			margin:0; padding:0;
+		}
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+		/* Force Hotmail to display emails at full width */
+		.ExternalClass {
+			width:100%;
+		}
+		/* Forces Hotmail to display normal line spacing. */ 
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+			line-height: 100%;
+		}
+		#backgroundTable {
+			margin:0;
+			padding:0;
+			width:100% !important; 
+			line-height: 100% !important;
+		}
+
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {
+			outline:none; 
+			text-decoration:none; -ms-interpolation-mode: bicubic;
+		} 
+		a img {
+			border:none;
+		} 
+		.image_fix {
+			display:block;
+		}
+
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {
+			margin: 1em 0;
+		}
+
+		/* Hotmail header color reset
+		Bring inline: Yes. */
+		h1, h2, h3, h4, h5, h6 {
+			color: black !important;
+		}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: blue !important;
+		}
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+		color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+		color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		table td {
+			border-collapse: collapse;
+		}
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		table { 
+			border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; 
+		}
+
+		/* Bring inline: Yes. */
+		a {
+			color: orange;
+		}
+
+		@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+				#header {
+					display: none;
+				}
+				table {
+					width: 320px;
+				}
+				#maintr {
+					margin-left: 0;
+				    margin-right: 0;
+				    width: auto;
+				}
+				#maintablesmall, #maintable2 {
+					width: 240px !important;
+				}
+				#Contactertd {
+					display: none;
+				}
+				#applicationtd {
+					padding-left: 20px;
+					width: 180px;
+				}
+				#logosmall {
+					display: block;
+				}
+				#logobig {
+					display: none;
+				}
+				#menu1 {
+					display: none;
+				}
+				#menu2 {
+					display: none;
+				}
+				#menu3 {
+					display: none;
+				}
+				#menu4 {
+					display: none;
+				}
+				#menu5 {
+					display: none;
+				}
+				#menu6 a{
+					padding: 10px 10px 10px 10px!important;
+				}
+				#menublank {
+					display: block;
+				}
+				#mainsmall {
+					display: block !important;
+				}
+				#mainsmallad {
+					display: block !important;
+				}
+				#mainbig {
+					display: none;
+				}
+			}
+		/*@media only screen and (min-width: 481px), only screen and (min-device-width: 481px) {*/
+		@media only screen and (min-width: 481px) {
+				#header {
+					display: block;
+				}
+				table {
+					width: 640px;
+				}
+				#maintable {
+					width: auto;
+				}
+				#maintable1, #maintable2 {
+					width: 620px;
+				}
+				#maintr {
+					margin-left: auto;
+				    margin-right: auto;
+				    width: 6em;
+				}
+				#Contactertd {
+					display: block;
+					float: left;
+					width: 200px;
+				}
+				#Suiveztd {
+					display: block;
+					float: left;
+					width: 200px;
+				}
+				#applicationtd {
+					padding-left: 50px; 
+					width: 200px;
+				}
+				#logosmall {
+					display: none;
+				}
+				#logobig {
+					display: block;
+				}
+				#menublank {
+					display: none;
+				}
+				#mainsmall {
+					display: none;
+				}
+				#mainsmallad {
+					display: none;
+				}
+				#mainbig {
+					display: block;
+				}
+				#menu6 a {
+					padding: 10px 8px 10px 8px;
+				}
+			}
+
+	</style>
+</head>
+<body style="margin-top:0; margin-bottom:0; margin-right:0; margin-left:0; padding-top:0; padding-bottom:0; padding-right:0; padding-left:0; font-family: Arial, Verdana, sans-serif;">
+<!-- Wrapper/Container Table -->
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" style="padding: 20px 0px 20px 0px" bgcolor="#ffffff" id="backgroundTable">
+	<tr align="center" valign="top" id="maintr">
+		<td> 
+			<!-- Start Header -->
+			<table id="header" width="640" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style=" color: #000000; padding: 0px 0px 16px 14px; font-family: Arial, Verdana, sans-serif;">
+				<tr>
+					<td style="text-align: center;font-size: 16px; color: #0e7105; padding-top: 16px; padding-bottom: 20px">
+						<span>Ce weekend, évadez-vous avec Europcar a un prix exceptionnel* !</span>
+					</td>
+				 </tr>
+				 <tr>
+				 	<td align="center" style="text-align: center; font-size: 10px; color: #000000; font-weight: normal;">
+				 		<span>
+				 			Si cet e-mail ne s'affiche pas correctement,<a href="#" target="_blank" title="link" style="color: #000000;"> suivez ce lien</a><br />
+				 		</span>
+				 		<span style="font-size: 10px; color: #000000; font-weight: normal;">
+							Assurez-vous de la bonne réception de nos e-mails en ajoutant europcar-fr@europcar-news.com a votre carnet d'adresses.
+						</span>
+				 	</td>
+				 </tr>
+			</table>
+			<!-- End Header -->
+
+			<!-- Start Menu -->
+			<table id="manuetable" width="640" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="margin-top: 14px; margin-bottom: 12px; font-family: Arial, Verdana, sans-serif;">
+				<tr>
+					<td id="menublank" style="background-color: #000000; width: 186px; height: 36px;">
+					</td>
+					<td id="menu1">
+						<span>
+							<a href="#" title="Réserver" style="display: block; background-color: #000000; font-size: 16px; padding: 10px 13px 10px 14px; color: #FFFFFF; text-decoration: none;">Réserver</a>
+						</span>		
+					</td>
+					<td id="menu2" style="padding-left: 2px;">
+						<span>
+							<a href="#" title="Agences" style="display: block; background-color: #000000; font-size: 16px; padding: 10px 14px 10px 14px; color: #FFFFFF; text-decoration: none;">Agences</a>
+						</span>
+					</td>
+					<td id="menu3" style="padding-left: 2px;">
+						<span>
+							<a href="#" title="Bonnes Affaires" style="display: block; width: 114px; background-color: #000000; font-size: 16px; padding: 10px 8px 10px 8px; color: #FFFFFF; text-decoration: none;">Bonnes Affaires</a>
+						</span>
+					</td>
+					<td id="menu4" style="padding-left: 2px;">
+						<span>
+							<a href="#" title="Fidélité" style="display: block; background-color: #000000; font-size: 16px; padding: 10px 12px 10px 12px; color: #FFFFFF; text-decoration: none;">Fidélité</a>
+						</span>
+					</td>
+					<td id="menu5" style="padding-left: 2px;">
+						<span>
+							<a href="#" title="AutoLiberté" style="display: block; background-color: #000000; font-size: 16px; padding: 10px 12px 10px 12px; color: #FFFFFF; text-decoration: none;">AutoLiberté</a>
+						</span>
+					</td>
+					<td id="menu6" style="padding-left: 2px; width: auto;">
+						<span>
+							<a href="#" title="MON COMPTE" style="display: block; min-width: 111px; background-color: #f0f0f0; font-size: 16px; padding: 10px 8px 10px 8px; color: #5b7b63; text-decoration: none;">MON COMPTE</a>
+						</span>
+					</td>
+				</tr>
+			</table width="640">
+			<!-- End Header -->
+
+			<!-- Logo -->
+			<table id="tablelogo" cellpadding="0" cellspacing="0">
+				<tr style="display: block; margin-top: -12px;">
+					<td id="logobig">
+						<a href="#" target="_blank" title="Logo"><img src="img/logo.png" alt="Logo" border="0"/></a>
+					</td>
+					<td id="logosmall">
+						<a href="#" target="_blank" title="Logo"><img src="img/ligosmall.png" alt="Logo" border="0"/></a>
+					</td>
+				</tr>
+			</table>
+			<!-- End Logo -->
+
+			<!-- Main Body -->
+			<table width="640" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<table id="maintable1" align="center" width="620" cellpadding="0" cellspacing="0" bgcolor="#f0f0f0" style="margin-top: 10px; margin-bottom: 12px; font-family: Arial, Verdana, sans-serif;">
+							<tr>
+								<td style="text-align: left; font-size: 16px; color:#000000; padding-top: 16px; padding-left: 10px; font-weight: bold;">
+									<span>Bonjour #PRENOM# #NOM#,</span>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: left; font-size: 13px; color:#000000; padding-top: 16px; padding-bottom: 10px; padding-left: 10px; font-weight: normal;">
+									<span>Pour profiter pleinement des longs week-ends, Europcar vous propose de partir pour un week-end inoubliable a un prix irrésistible. Alors n'attendez plus et réservez votre véhicule des a présent avec votre numéro de conducteur XXXXX !</span>
+								</td>
+							</tr>
+						</table>
+						<table id="maintable2" align="center" width="620" cellpadding="0" cellspacing="0" bgcolor="#f0f0f0" style="margin-top: 10px; margin-bottom: 12px; font-family: Arial, Verdana, sans-serif;" >
+							<tr id="mainbig">
+								<td>
+									<img src="img/adbig.png" alt="Ad" style="display: block;" />
+								</td>
+								<td style="text-align: left; font-size: 16px; color:#0e7105; padding-top: 0px; padding-bottom: 20px; font-weight: bold; padding-left: 14px; padding-right: 14px">
+									<table id="maintable" width="auto" cellpadding="0" cellspacing="0" style="margin-top: 0px; padding: 0; font-family: Arial, Verdana, sans-serif;">
+										<tr style=" display: block; margin-top: 16px;">
+											<td style="display: block; height: 30px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Paris gare de Lyon" style="color: #0e7105; text-decoration: none;">Paris gare de Lyon</a>
+												</span>
+												<a href="#" target="_blank" title="Paris gare de Lyon"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Orly aéroport" style="color: #0e7105; text-decoration: none;">Orly aéroport</a>
+												</span>
+												<a href="#" target="_blank" title="Orly aéroport"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Nice aéroport" style="color: #0e7105; text-decoration: none;">Nice aéroport</a>
+												</span>
+												<a href="#" target="_blank" title="Nice aéroport"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Toutes nos agences" style="color: #0e7105; text-decoration: none;">Toutes nos agences</a>
+												</span>
+												<a href="#" target="_blank" title="Toutes nos agences"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" target="_blank" title="JE M"><img src="img/jem.png" alt="" style="display: block; float: left;" /></a>
+											</td>
+										</tr>
+										<tr>
+											<td style="display: block; padding-top: 10px;">
+												<a href="#" target="_blank" title="Facebook"><img src="img/fbbig.png" alt="" style="display: block; float: left;" /></a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr id="mainsmallad" style="display: none;">
+								<td>
+									<img src="img/adsmall.png" alt="Ad" />
+								</td>
+							</tr>
+							<tr id="mainsmall" style="display: none;">
+								<td style="text-align: left; font-size: 16px; color:#0e7105; padding-top: 0px; padding-bottom: 20px; font-weight: bold; padding-left: 14px; padding-right: 14px">
+									<table id="maintablesmall" cellpadding="0" cellspacing="0" style="margin-top: 0px; padding: 0; font-family: Arial, Verdana, sans-serif;">
+										<tr style=" display: block; margin-top: 16px;">
+											<td style="display: block; height: 30px; padding: 0px 16px 0 16px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Paris gare de Lyon" style="color: #0e7105; text-decoration: none;">Paris gare de Lyon</a>
+												</span>
+												<a href="#" target="_blank" title="Paris gare de Lyon"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px; padding: 0px 16px 0 16px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Orly aéroport" style="color: #0e7105; text-decoration: none;">Orly aéroport</a>
+												</span>
+												<a href="#" target="_blank" title="Orly aéroport"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px; padding: 0px 16px 0 16px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Nice aéroport" style="color: #0e7105; text-decoration: none;">Nice aéroport</a>
+												</span>
+												<a href="#" target="_blank" title="Nice aéroport"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr style=" display: block;">
+											<td style="display: block; height: 30px; padding: 0px 16px 0 16px;">
+												<span style="display: block; float: left;">
+													<a href="#" target="_blank" title="Toutes nos agences" style="color: #0e7105; text-decoration: none;">Toutes nos agences</a>
+												</span>
+												<a href="#" target="_blank" title="Toutes nos agences"><img src="img/right.png" alt="" style="display: block; float: right; width: 33px; height: 29px; margin-top: -6px;margin-left: 10px;" /></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" target="_blank" title="JE M"><img src="img/jem.png" alt="" style="display: block; float: left;" /></a>
+												<a href="#" target="_blank" title="Facebook"><img src="img/fbbig.png" alt="" style="display: block; float: left; margin-top: 8px; margin-left: 10px;" /></a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!-- End Logo -->
+
+			<!-- Strap -->
+			<table id="strapid" width="640" cellpadding="0" cellspacing="0" bgcolor="#303030" style="font-size: 12px; margin-top: 0px; margin-bottom: 0px; font-family: Arial, Verdana, sans-serif;">
+				<tr align="center">
+					<td id="applicationtd" style=" text-align: left; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; padding-right: 10px; font-weight: normal;display: block; float: left;">
+						<span style="font-weight: bold; display: block; padding-bottom: 4px;">
+							Application mobile <br />
+						</span>
+						<span>
+							A télécharger <br />
+						</span>
+						<span style="display: block; float: left;">
+							gratuitement
+						</span>
+						<img src="img/smartphone.png" alt="" style="display: block; float: left; padding-left: 20px; margin-top: -16px;" />
+					</td>
+					<td id="Contactertd" style="width: 200px; text-align: left; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; padding-right: 10px; font-weight: normal;">
+						<span style="font-weight: bold; display: block; padding-bottom: 4px;">
+							Nous contacter <br />
+						</span>
+						<span style="display: block; float: left;">
+							Une question, besoin <br />
+							d’une informations ?
+						</span>
+						<img src="img/questionmark..png" alt="" style="display: block; float: left; padding-left: 20px;" />
+					</td>
+					<td id="Suiveztd" style="width: auto; min-width: 100px; text-align: left; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; padding-right: 10px; font-weight: normal;">
+						<span style="font-weight: bold;">
+							Suivez-nous sur <br />
+						</span>
+						<a href="#" target="_blank" title="Facebook"><img src="img/fb.png" alt="Logo" border="0" style="margin-top: 6px;"/></a>
+						<a href="#" target="_blank" title="Google+"><img src="img/gplus.png" alt="Logo" border="0" style="margin-top: 6px; margin-left: 6px;"/></a>
+						<a href="#" target="_blank" title="twitter"><img src="img/twitter.png" alt="Logo" border="0" style="margin-top: 6px; margin-left: 6px;"/></a>
+					</td>
+				</tr>	
+			</table>
+
+			<!-- Footer -->
+			<table id="footerid" width="640" cellpadding="0" cellspacing="0" bgcolor="#0d7401" style="font-size: 12px; margin-top: 0px; font-family: Arial, Verdana, sans-serif;">
+				<tr>
+					<td style="text-align: left; color:#FFFFFF; padding-top: 16px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; font-weight: normal;">
+						<span>
+							*Votre code promo xxxxx valable pour la réservation prépayée d’un véhicule de tourisme effectuée jusqu’au 11 novembre 2013 et pour un départ effectué en France Métropolitaine jusqu’au 11 novembre 2013. Cette offre est valable pour les locations en formule week-end incluant la nuit du samedi au dimanche. Cette offre n'est pas valable dans les régions Ile de France, Sud Ouest, Languedoc-Roussillon et Provence Alpes Côte d'Azur. <br /><br />
+
+							Comment profiter de notre code promo depuis votre application mobile Europcar ou depuis le site mobile ?<br />
+							1. Lors de votre réservation, veuillez cocher " J'ai un code promo".<br />
+							2. Saisissez le code promo xxxxx.<br />
+							3. Et cliquez sur "Valider".<br /><br />
+
+							Les conditions générales de location en vigueur chez Europcar au moment de la location s'appliquent. Vous disposez d'un droit d'acces, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi "Informatique et Liberté" du 6 janvier 1978). Pour modifier vos informations personnelles, adressez-vous a Europcar France, Parc d'affaires Val Saint Quentin, 2 rue René Caudron, 78960 Voisins le Bretonneux.<br /><br />
+
+							Vous vous etes inscrit a la newsletter Europcar. Pour vous désabonner, <a href="#" target="_blank" title="link2" style="color: #FFFFFF;"> cliquez ici.</a>
+						</span>
+					</td>
+				</tr>	
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
